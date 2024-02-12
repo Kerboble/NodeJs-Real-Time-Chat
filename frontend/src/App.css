@@ -88,3 +88,7 @@ body {
   color: white; 
   background: rgb(43, 47, 60);
 }
+
+#ce-chat-feed-title {
+  color: #fa541c !important;
+}
