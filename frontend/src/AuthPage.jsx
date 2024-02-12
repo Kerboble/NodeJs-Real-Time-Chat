@@ -1,4 +1,6 @@
 import axios from 'axios'
+import pen from "./assets/icons8-quill-pen-64.png"
+import loginPhoto from "./assets/Rectangle 7592.png"
 
 const AuthPage = (props) => {
     const onSubmit = (e) => {
@@ -16,14 +18,11 @@ const AuthPage = (props) => {
   
     return (
       <div className="background">
-        <form onSubmit={onSubmit} className="form-card">
-          <div className="form-title">Welcome 👋</div>
-  
-          <div className="form-subtitle">Set a username to get started</div>
-  
+        <img src={loginPhoto} className='login-photo' />
+        <form onSubmit={onSubmit} className="form-container">
+          <div className="form-title"> <img src={pen} className='pen-logo' />PenPals</div>
           <div className="auth">
-            <div className="auth-label">Username</div>
-            <input className="auth-input" name="username" />
+            <input className="auth-input" name="username" placeholder='Enter Name' />
             <button className="auth-button" type="submit">
               Enter
             </button>
