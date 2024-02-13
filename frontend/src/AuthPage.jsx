@@ -22,7 +22,7 @@ const AuthPage = (props) => {
         <form onSubmit={onSubmit} className="form-container">
           <div className="form-title"> <img src={pen} className='pen-logo' />PenPals</div>
           <div className="auth">
-            <input className="auth-input" name="username" placeholder='Enter Name' />
+            <input className="auth-input" name="username" placeholder='First and Last Name' />
             <button className="auth-button" type="submit">
               Enter
             </button>

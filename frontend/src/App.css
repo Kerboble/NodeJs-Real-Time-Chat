@@ -32,12 +32,15 @@ body {
   align-items: center;
   margin-top: 250px;
   margin-left: 200px;
+  ;
    input {
     padding: 70px 90px 0px;
     border: none;
     border-bottom: 2px solid white;
     background-color: transparent;
     font-size: 20px;
+    color: #AFB4AD;
+    text-align: center;
     &::placeholder {
       color: white;
       font-weight: bolder;
@@ -45,7 +48,7 @@ body {
     }
     &:focus {
       outline: none;
-    }
+    } 
   }
 }
 
@@ -64,14 +67,33 @@ flex-direction: column;
 }
 
 button {
-  background-color: #262B15;
-  color: white;
-  padding: 17px;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  margin-top: 50px;
+  outline: 0;
+  grid-gap: 8px;
+  align-items: center;
+  background: 0 0;
+  border: 1px solid #262b15;
+  border-radius: 4px;
   cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+  width: 100px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+button:hover {
+  box-shadow: 4px 4px 0 #262b15;
+  transform: translate(-4px,-4px);
 }
 
 .form-title {
